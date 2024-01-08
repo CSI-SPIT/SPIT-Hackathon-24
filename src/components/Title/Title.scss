@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/cloister-black');
+@import url('https://fonts.cdnfonts.com/css/old-english-five');
+@import url('https://fonts.cdnfonts.com/css/usangel');
+@import url('https://fonts.cdnfonts.com/css/arb-85-poster-script-jan-39');
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Permanent+Marker&family=Special+Elite&family=Splash&display=swap');
+// $primary-font: 'Indie Flower', cursive;
+$bg-dark: #121212;
+$text-color: #ffffffda;
+$border-color: #ffffffda;
+
+html {
+  font-size: 100%; /* Add a font size */
+  //font-family: $primary-font;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: $bg-dark;
+  color: $text-color;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 12rem;
+  scale: 0.75;
+}
+
+.title {
+  font-size: 8rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  .letter {
+    text-shadow: 0 0 0.4em $border-color, 0 0 0.4em $border-color, 0 0 0.4em $border-color;
+    mix-blend-mode: screen;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit; // or specify a default font-family here
+  }
+}
+
+.spit{
+  font-size: 4rem;
+  align-self: start;
+  .letter{
+    height: 4rem;
+  }
+}
+
+.year{
+  font-size: 4rem;
+  align-self: end;
+  .letter {
+    height: 4rem;
+  }
+}
+
+.hackathon{
+  font-size: 8rem;
+  .letter{
+    height: 8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12rem;
+    scale: 0.75;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  
+    .letter {
+      text-shadow: 0 0 0.4em $border-color, 0 0 0.4em $border-color, 0 0 0.4em $border-color;
+      mix-blend-mode: screen;
+      padding: 0 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: inherit; // or specify a default font-family here
+    }
+  }
+  .spit{
+    font-size: 3rem;
+    .letter{
+      height: 3rem;
+    }
+  }
+  
+  .year{
+    font-size: 3rem;
+    .letter {
+      height: 3rem;
+    }
+  }
+  
+  .hackathon{
+    font-size: 3rem;
+    .letter{
+      height: 3rem;
+    }
+  }
+}

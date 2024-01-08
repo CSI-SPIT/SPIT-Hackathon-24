@@ -1,0 +1,92 @@
+.App {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+.logo{
+	height: 80px;
+	width: 50px;
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 500px){
+	.logo{
+		left: 2rem;
+	}
+}
+
+.outercontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(7, 31, 8);
+	text-align: center;
+	
+}
+.particlecontainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.75;
+	text-align: center;
+}
+
+.imgcontainer::before {
+	content: "";
+	background-image: url("../src/imgs/lokibg5.png");
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	inset: 0;
+	opacity: 0.8;
+	
+}
+
+@media screen and (max-width: 500px){
+	.imgcontainer::before {
+		content: "";
+		background-image: url("../src/imgs/lokibg5.png");
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat no-repeat;
+		position: absolute;
+		inset: 0;
+		opacity: 0.8;
+	}
+}
+
+.titlesect {
+	width: 70vw;
+	height: 20%;
+	/* position: absolute;
+	top: 60px; */
+	position: relative;
+}
+
+.prizes{
+	position: relative;
+	margin-top: 5rem;
+	min-height: 500px;
+}
+
+.Footer{
+	position: relative;
+}
+
+.sponsors{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100dvw;
+}
